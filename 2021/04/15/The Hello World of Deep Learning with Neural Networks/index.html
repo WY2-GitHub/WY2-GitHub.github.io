@@ -20,27 +20,31 @@
     var CONFIG = {"hostname":"jianqiwang12.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="WY2de博客">
-<meta property="og:url" content="http:&#x2F;&#x2F;jianqiwang12.github.io&#x2F;index.html">
+  <meta name="description" content="导入库我们先从导入相关库开始。这里我们导入TensorFlow，并将其简称为tf来方便使用。 然后，我们导入一个名为numpy的库，该库可以帮助我们轻松地将数据表示为列表。 将神经网络定义为一组顺序层的框架称为keras，我们也将其导入。 123import tensorflow as tfimport numpy as npfrom tensorflow import keras 定义并编译神经">
+<meta name="keywords" content="Tensorflow,Deep Learning">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Hello World of Deep Learning with Neural Networks">
+<meta property="og:url" content="http:&#x2F;&#x2F;jianqiwang12.github.io&#x2F;2021&#x2F;04&#x2F;15&#x2F;The%20Hello%20World%20of%20Deep%20Learning%20with%20Neural%20Networks&#x2F;index.html">
 <meta property="og:site_name" content="WY2de博客">
+<meta property="og:description" content="导入库我们先从导入相关库开始。这里我们导入TensorFlow，并将其简称为tf来方便使用。 然后，我们导入一个名为numpy的库，该库可以帮助我们轻松地将数据表示为列表。 将神经网络定义为一组顺序层的框架称为keras，我们也将其导入。 123import tensorflow as tfimport numpy as npfrom tensorflow import keras 定义并编译神经">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-03-22T03:45:06.000Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://jianqiwang12.github.io/">
+<link rel="canonical" href="http://jianqiwang12.github.io/2021/04/15/The%20Hello%20World%20of%20Deep%20Learning%20with%20Neural%20Networks/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>WY2de博客</title>
+  <title>The Hello World of Deep Learning with Neural Networks | WY2de博客</title>
   
 
 
@@ -139,82 +143,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://jianqiwang12.github.io/2021/04/15/%E5%86%B3%E7%AD%96%E6%A0%91/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="王一二">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="WY2de博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/15/%E5%86%B3%E7%AD%96%E6%A0%91/" class="post-title-link" itemprop="url">决策树</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-04-15 08:01:13" itemprop="dateCreated datePublished" datetime="2021-04-15T08:01:13+08:00">2021-04-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-19 12:16:24" itemprop="dateModified" datetime="2020-01-19T12:16:24+08:00">2020-01-19</time>
-              </span>
-
-          
-
-        </div>
-      </header>
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h3><ul>
-<li>熵
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/04/15/%E5%86%B3%E7%AD%96%E6%A0%91/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -230,10 +162,9 @@
       <meta itemprop="name" content="WY2de博客">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/15/The%20Hello%20World%20of%20Deep%20Learning%20with%20Neural%20Networks/" class="post-title-link" itemprop="url">The Hello World of Deep Learning with Neural Networks</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          The Hello World of Deep Learning with Neural Networks
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -263,7 +194,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="导入库"><a href="#导入库" class="headerlink" title="导入库"></a>导入库</h2><p>我们先从导入相关库开始。这里我们导入<strong>TensorFlow</strong>，并将其简称为<strong>tf</strong>来方便使用。</p>
+        <h2 id="导入库"><a href="#导入库" class="headerlink" title="导入库"></a>导入库</h2><p>我们先从导入相关库开始。这里我们导入<strong>TensorFlow</strong>，并将其简称为<strong>tf</strong>来方便使用。</p>
 <p>然后，我们导入一个名为<strong>numpy</strong>的库，该库可以帮助我们轻松地将数据表示为列表。</p>
 <p>将神经网络定义为一组顺序层的框架称为<strong>keras</strong>，我们也将其导入。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import tensorflow as tf</span><br><span class="line">import numpy as np</span><br><span class="line">from tensorflow import keras</span><br></pre></td></tr></table></figure>
@@ -282,94 +213,37 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(model.predict([10.0]))</span><br></pre></td></tr></table></figure>
 <p>我们可以看到，预测的结果与我们期望的19非常接近。</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/Tensorflow/" rel="tag"># Tensorflow</a>
+              <a href="/tags/Deep-Learning/" rel="tag"># Deep Learning</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://jianqiwang12.github.io/2021/04/15/AHP%E5%B1%82%E6%AC%A1%E5%88%86%E6%9E%90%E6%B3%95%E5%9F%BA%E7%A1%80%E5%86%85%E5%AE%B9%E5%8F%8Apython%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="王一二">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="WY2de博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/15/AHP%E5%B1%82%E6%AC%A1%E5%88%86%E6%9E%90%E6%B3%95%E5%9F%BA%E7%A1%80%E5%86%85%E5%AE%B9%E5%8F%8Apython%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0/" class="post-title-link" itemprop="url">AHP层次分析法基础内容及python代码实现</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-04-15 08:01:13" itemprop="dateCreated datePublished" datetime="2021-04-15T08:01:13+08:00">2021-04-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-02 18:07:23" itemprop="dateModified" datetime="2020-03-02T18:07:23+08:00">2020-03-02</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ul>
-<li>层次分析法是指将一个复杂的多目标决策问题作为一个系统，将目标分解为多个目标或准则，进而分解为多指标（或准则、约束）的若干层次，通过定性指标模糊量化方法算出层次单排序（权数）和总排序，以作为目标（多指标）、多方案优化决策的系统方法。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/04/15/AHP%E5%B1%82%E6%AC%A1%E5%88%86%E6%9E%90%E6%B3%95%E5%9F%BA%E7%A1%80%E5%86%85%E5%AE%B9%E5%8F%8Apython%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/04/15/AHP%E5%B1%82%E6%AC%A1%E5%88%86%E6%9E%90%E6%B3%95%E5%9F%BA%E7%A1%80%E5%86%85%E5%AE%B9%E5%8F%8Apython%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0/" rel="prev" title="AHP层次分析法基础内容及python代码实现">
+      <i class="fa fa-chevron-left"></i> AHP层次分析法基础内容及python代码实现
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/04/15/%E5%86%B3%E7%AD%96%E6%A0%91/" rel="next" title="决策树">
+      决策树 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -422,6 +296,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#导入库"><span class="nav-number">1.</span> <span class="nav-text">导入库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定义并编译神经网络"><span class="nav-number">2.</span> <span class="nav-text">定义并编译神经网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#提供数据"><span class="nav-number">3.</span> <span class="nav-text">提供数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#训练神经网络"><span class="nav-number">4.</span> <span class="nav-text">训练神经网络</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

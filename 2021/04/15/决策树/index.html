@@ -20,14 +20,18 @@
     var CONFIG = {"hostname":"jianqiwang12.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="WY2de博客">
-<meta property="og:url" content="http:&#x2F;&#x2F;jianqiwang12.github.io&#x2F;tags&#x2F;%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95&#x2F;index.html">
+  <meta name="description" content="相关概念 熵">
+<meta name="keywords" content="统计学习方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="决策树">
+<meta property="og:url" content="http:&#x2F;&#x2F;jianqiwang12.github.io&#x2F;2021&#x2F;04&#x2F;15&#x2F;%E5%86%B3%E7%AD%96%E6%A0%91&#x2F;index.html">
 <meta property="og:site_name" content="WY2de博客">
+<meta property="og:description" content="相关概念 熵">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-01-19T04:16:24.000Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://jianqiwang12.github.io/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/">
+<link rel="canonical" href="http://jianqiwang12.github.io/2021/04/15/%E5%86%B3%E7%AD%96%E6%A0%91/">
 
 
 <script id="page-configurations">
@@ -35,12 +39,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>标签: 统计学习方法 | WY2de博客</title>
+  <title>决策树 | WY2de博客</title>
   
 
 
@@ -139,51 +143,99 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">统计学习方法
-          <small>标签</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://jianqiwang12.github.io/2021/04/15/%E5%86%B3%E7%AD%96%E6%A0%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="王一二">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WY2de博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          决策树
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-15 08:01:13" itemprop="dateCreated datePublished" datetime="2021-04-15T08:01:13+08:00">2021-04-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-01-19 12:16:24" itemprop="dateModified" datetime="2020-01-19T12:16:24+08:00">2020-01-19</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+        <h3 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h3><ul>
+<li>熵<a id="more"></a><br>通俗解释：<br>随机变量不确定性的度量。<br>理论解释：<br>设$X$是一个取有限个值的离散随机，其概率分布为<script type="math/tex; mode=display">P(X=x_i)=p_i,i=1,2,\cdots,n</script>则随机变量$X$的熵定义为<script type="math/tex; mode=display">H(X)=-\sum_{i=1}^np_i\log p_i</script>以2为底成为比特，以e为底成为纳特。<br>熵只依赖于$X$的分布，与$X$的取值无关，也可记为<script type="math/tex; mode=display">H(p)=-\sum_{i=1}^np_i\log p_i</script></li>
+<li>条件熵</li>
+<li>信息增益</li>
+<li>信息增益比</li>
+<li>剪枝</li>
+</ul>
+<h3 id="相关算法"><a href="#相关算法" class="headerlink" title="相关算法"></a>相关算法</h3><ul>
+<li>信息增益的算法 </li>
+<li>ID3算法</li>
+<li>C4.5算法</li>
+<li>剪枝算法</li>
+</ul>
+<h4 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h4><p>[1]统计学习方法(第2版). 李航. 北京: 清华大学出版社, 2019.</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-04-15T08:01:13+08:00"
-              content="2021-04-15">
-          04-15
-        </time>
-      </div>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/" rel="tag"># 统计学习方法</a>
+          </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/15/%E5%86%B3%E7%AD%96%E6%A0%91/" itemprop="url">
-            <span itemprop="name">决策树</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/04/15/The%20Hello%20World%20of%20Deep%20Learning%20with%20Neural%20Networks/" rel="prev" title="The Hello World of Deep Learning with Neural Networks">
+      <i class="fa fa-chevron-left"></i> The Hello World of Deep Learning with Neural Networks
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
@@ -236,6 +288,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#相关概念"><span class="nav-number">1.</span> <span class="nav-text">相关概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相关算法"><span class="nav-number">2.</span> <span class="nav-text">相关算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#参考文献"><span class="nav-number">2.1.</span> <span class="nav-text">参考文献</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
